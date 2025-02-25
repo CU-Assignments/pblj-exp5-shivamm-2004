@@ -1,0 +1,24 @@
+package myjava.exp5;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AutoboxingExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+
+        String[] strNumbers = {"10", "20", "30", "40", "50"};
+
+        for (String str : strNumbers) {
+            numbers.add(Integer.parseInt(str)); 
+        }
+
+        int sum = 0;
+        for (Integer num : numbers) {
+            sum += num; 
+        }
+
+
+        System.out.println("Sum of numbers: " + sum);
+    }
+}
